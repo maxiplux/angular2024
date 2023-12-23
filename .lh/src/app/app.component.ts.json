@@ -1,0 +1,34 @@
+{
+    "sourceFile": "src/app/app.component.ts",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 4,
+            "patches": [
+                {
+                    "date": 1703249390758,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1703249400318,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,7 +10,7 @@\n   imports: [CommonModule, RouterOutlet],\n   templateUrl: './app.component.html',\n   styleUrl: './app.component.css'\n })\n-export class AppComponent {\n+export class AppComponent  implements OnInit {\n   title = 'angular2024';\n }\n"
+                },
+                {
+                    "date": 1703249407765,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,17 @@\n+import { Component } from '@angular/core';\n+import { CommonModule } from '@angular/common';\n+import { RouterOutlet } from '@angular/router';\n+\n+import { initFlowbite } from 'flowbite';\n+\n+@Component({\n+  selector: 'app-root',\n+  standalone: true,\n+  imports: [CommonModule, RouterOutlet],\n+  templateUrl: './app.component.html',\n+  styleUrl: './app.component.css'\n+})\n+export class AppComponent  implements OnInit {\n+  \n+  title = 'angular2024';\n+}\n"
+                },
+                {
+                    "date": 1703249415343,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,5 @@\n-import { Component } from '@angular/core';\n+import { Component, OnInit } from '@angular/core';\n import { CommonModule } from '@angular/common';\n import { RouterOutlet } from '@angular/router';\n \n import { initFlowbite } from 'flowbite';\n@@ -11,23 +11,7 @@\n   templateUrl: './app.component.html',\n   styleUrl: './app.component.css'\n })\n export class AppComponent  implements OnInit {\n-  \n-  title = 'angular2024';\n-}\n-import { Component } from '@angular/core';\n-import { CommonModule } from '@angular/common';\n-import { RouterOutlet } from '@angular/router';\n \n-import { initFlowbite } from 'flowbite';\n-\n-@Component({\n-  selector: 'app-root',\n-  standalone: true,\n-  imports: [CommonModule, RouterOutlet],\n-  templateUrl: './app.component.html',\n-  styleUrl: './app.component.css'\n-})\n-export class AppComponent  implements OnInit {\n   title = 'angular2024';\n }\n"
+                },
+                {
+                    "date": 1703249421480,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,5 +13,9 @@\n })\n export class AppComponent  implements OnInit {\n \n   title = 'angular2024';\n+\n+  ngOnInit(): void {\n+    initFlowbite();\n+  }\n }\n"
+                }
+            ],
+            "date": 1703249390758,
+            "name": "Commit-0",
+            "content": "import { Component } from '@angular/core';\nimport { CommonModule } from '@angular/common';\nimport { RouterOutlet } from '@angular/router';\n\nimport { initFlowbite } from 'flowbite';\n\n@Component({\n  selector: 'app-root',\n  standalone: true,\n  imports: [CommonModule, RouterOutlet],\n  templateUrl: './app.component.html',\n  styleUrl: './app.component.css'\n})\nexport class AppComponent {\n  title = 'angular2024';\n}\n"
+        }
+    ]
+}

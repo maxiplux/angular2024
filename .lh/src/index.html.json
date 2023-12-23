@@ -1,0 +1,22 @@
+{
+    "sourceFile": "src/index.html",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 1,
+            "patches": [
+                {
+                    "date": 1703248892917,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1703248931913,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,13 @@\n+<!doctype html>\n+<html lang=\"en\"  class=\"h-full\">\n+<head>\n+  <meta charset=\"utf-8\">\n+  <title>Angular2024</title>\n+  <base href=\"/\">\n+  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n+  <link rel=\"icon\" type=\"image/x-icon\" href=\"favicon.ico\">\n+</head>\n+<body class=\"h-full\">\n+  <app-root></app-root>\n+</body>\n+</html>\n"
+                }
+            ],
+            "date": 1703248892917,
+            "name": "Commit-0",
+            "content": "<!doctype html>\n<html lang=\"en\">\n<head>\n  <meta charset=\"utf-8\">\n  <title>Angular2024</title>\n  <base href=\"/\">\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n  <link rel=\"icon\" type=\"image/x-icon\" href=\"favicon.ico\">\n</head>\n<body class=\"h-full\">\n  <app-root></app-root>\n</body>\n</html>\n"
+        }
+    ]
+}

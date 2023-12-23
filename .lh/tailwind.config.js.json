@@ -1,0 +1,46 @@
+{
+    "sourceFile": "tailwind.config.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 7,
+            "patches": [
+                {
+                    "date": 1703248797027,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1703248802347,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,9 @@\n+/** @type {import('tailwindcss').Config} */\n+module.exports = {\n+  content: [\"./src/**/*.{html,ts}\" ],\n+  theme: {\n+    extend: {},\n+  },\n+  plugins: [],\n+}\n+\n"
+                },
+                {
+                    "date": 1703249357155,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,16 +3,7 @@\n   content: [\"./src/**/*.{html,ts}\" ],\n   theme: {\n     extend: {},\n   },\n-  plugins: [],\n+  plugins: ['flowbite/plugin'],\n }\n \n-/** @type {import('tailwindcss').Config} */\n-module.exports = {\n-  content: [\"./src/**/*.{html,ts}\", // add this line],\n-  theme: {\n-    extend: {},\n-  },\n-  plugins: [],\n-}\n-\n"
+                },
+                {
+                    "date": 1703249370548,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,11 @@\n /** @type {import('tailwindcss').Config} */\n module.exports = {\n-  content: [\"./src/**/*.{html,ts}\" ],\n+  content: [\n+    \"./src/**/*.{html,ts}\"\n+    'flowbite/plugin'\n+\n+],\n   theme: {\n     extend: {},\n   },\n   plugins: ['flowbite/plugin'],\n"
+                },
+                {
+                    "date": 1703302999340,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,13 @@\n+/** @type {import('tailwindcss').Config} */\n+module.exports = {\n+  content: [\n+    \"./src/**/*.{html,ts}\",\n+    'flowbite/plugin'\n+\n+],\n+  theme: {\n+    extend: {},\n+  },\n+  plugins: ['flowbite/plugin'],\n+}\n+\n"
+                },
+                {
+                    "date": 1703303021748,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,22 +5,14 @@\n     'flowbite/plugin'\n \n ],\n   theme: {\n-    extend: {},\n-  },\n-  plugins: ['flowbite/plugin'],\n-}\n+    extend: {\n+      colors: {\n+        primary: {\"50\":\"#fef2f2\",\"100\":\"#fee2e2\",\"200\":\"#fecaca\",\"300\":\"#fca5a5\",\"400\":\"#f87171\",\"500\":\"#ef4444\",\"600\":\"#dc2626\",\"700\":\"#b91c1c\",\"800\":\"#991b1b\",\"900\":\"#7f1d1d\",\"950\":\"#450a0a\"}\n+      }\n \n-/** @type {import('tailwindcss').Config} */\n-module.exports = {\n-  content: [\n-    \"./src/**/*.{html,ts}\"\n-    'flowbite/plugin'\n-\n-],\n-  theme: {\n-    extend: {},\n+    },\n   },\n   plugins: ['flowbite/plugin'],\n }\n \n"
+                },
+                {
+                    "date": 1703303086329,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,10 +9,45 @@\n     extend: {\n       colors: {\n         primary: {\"50\":\"#fef2f2\",\"100\":\"#fee2e2\",\"200\":\"#fecaca\",\"300\":\"#fca5a5\",\"400\":\"#f87171\",\"500\":\"#ef4444\",\"600\":\"#dc2626\",\"700\":\"#b91c1c\",\"800\":\"#991b1b\",\"900\":\"#7f1d1d\",\"950\":\"#450a0a\"}\n       }\n-\n     },\n+    fontFamily: {\n+      'body': [\n+    'Inter',\n+    'ui-sans-serif',\n+    'system-ui',\n+    '-apple-system',\n+    'system-ui',\n+    'Segoe UI',\n+    'Roboto',\n+    'Helvetica Neue',\n+    'Arial',\n+    'Noto Sans',\n+    'sans-serif',\n+    'Apple Color Emoji',\n+    'Segoe UI Emoji',\n+    'Segoe UI Symbol',\n+    'Noto Color Emoji'\n+  ],\n+      'sans': [\n+    'Inter',\n+    'ui-sans-serif',\n+    'system-ui',\n+    '-apple-system',\n+    'system-ui',\n+    'Segoe UI',\n+    'Roboto',\n+    'Helvetica Neue',\n+    'Arial',\n+    'Noto Sans',\n+    'sans-serif',\n+    'Apple Color Emoji',\n+    'Segoe UI Emoji',\n+    'Segoe UI Symbol',\n+    'Noto Color Emoji'\n+  ]\n+    }\n   },\n   plugins: ['flowbite/plugin'],\n }\n \n"
+                },
+                {
+                    "date": 1703303126118,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,8 +4,9 @@\n     \"./src/**/*.{html,ts}\",\n     'flowbite/plugin'\n \n ],\n+darkMode: 'class',\n   theme: {\n     extend: {\n       colors: {\n         primary: {\"50\":\"#fef2f2\",\"100\":\"#fee2e2\",\"200\":\"#fecaca\",\"300\":\"#fca5a5\",\"400\":\"#f87171\",\"500\":\"#ef4444\",\"600\":\"#dc2626\",\"700\":\"#b91c1c\",\"800\":\"#991b1b\",\"900\":\"#7f1d1d\",\"950\":\"#450a0a\"}\n"
+                }
+            ],
+            "date": 1703248797026,
+            "name": "Commit-0",
+            "content": "/** @type {import('tailwindcss').Config} */\nmodule.exports = {\n  content: [\"./src/**/*.{html,ts}\", // add this line],\n  theme: {\n    extend: {},\n  },\n  plugins: [],\n}\n\n"
+        }
+    ]
+}
